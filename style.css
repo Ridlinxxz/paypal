@@ -4,3 +4,9 @@
 .svg {
     margin: 0px auto;
 }
+body {
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
+    width: 100%;
+}

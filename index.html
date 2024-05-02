@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-600">
-    <header class="px-44 py-6">
+<body class="text-gray-700">
+    <header class="sm:px-44 px-2 py-6">
         <nav>
-        <div class="flex justify-between items-center">
+        <div class="flex sm:justify-between items-center">
             <div class="flex items-center">
                 <span>
-                    <h3 class="text-indigo-900 font-sans font-bold text-3xl">Pay<span class="text-pink-900 font-normal">Pat</span></h3>
+                    <h3 class="text-indigo-900 font-sans font-bold sm:text-3xl text-6xl">Pay<span class="text-pink-900 font-normal">Pat</span></h3>
                 </span>
                 
-                <span class="inline-flex ml-20 text-gray-700 font-semibold">
+                <span class="sm:inline-flex ml-20 text-gray-700 font-semibold hidden">
                     <h4>
                         <a class="hover:text-indigo-800" href="#">Home</a>
                     </h4>
@@ -29,7 +29,7 @@
                 </span>
             </div>
             <div>
-                <botton class="py-3 px-6 bg-indigo-800 text-gray-100 font-semibold rounded-full hover:bg-gray-300 hover:text-indigo-800">
+                <botton class="sm:block hidden py-3 px-6 bg-indigo-900 text-gray-100 font-semibold rounded-full hover:bg-gray-300 hover:text-indigo-800">
                     <a href="#">Get Started</a>
                 </botton>
             </div>
@@ -38,27 +38,35 @@
     </header><!---header ends-->
 
     <main>
-        <div class="flex justify-between px-44 mt-14">
-            <div class="size-5/12">
+        <div class="flex justify-between sm:px-44 sm:mt-14 mt-8">
+            <div class="sm:size-5/12 w-full">
                 <div class="w-full">
-                    <h1 class="font-serif text-indigo-900 font-bold text-6xl mt-28">start paying with our PATs for absolutely free.</h1>
+                    <h1 class="font-serif text-indigo-900 font-bold sm:text-6xl text-5xl sm:mt-28">start paying with our PATs for absolutely free.</h1>
                 </div>
-                <div class="relative inline-flex items-center mt-8">
+
+                <div class="sm:relative sm:inline-flex sm:items-center sm:mt-8 hidden">
                     <div><h3 class="relative py-3 pl-5 pr-32 text-sm rounded-full bg-white text-gray-400 font-semibold shadow-md">Enter email address</h3></div>
                     <div class="hover:scale-110 hover:duration-1000 hover:ease-in-out">
-                        <a class="relative py-3 px-5 -ml-8 text-sm bg-indigo-800 text-gray-100 font-semibold rounded-full shadow-md" href="#">Get Started</a></div>
+                        <a class="relative py-3 px-5 -ml-8 text-sm bg-indigo-900 text-gray-100 font-semibold rounded-full shadow-md" href="#">Get Started</a></div>
                 </div>
-                <div class="mt-2 ml-4 text-gray-500">
+
+                <div>
+                    <botton class="inline-flex sm:hidden py-3 px-6 bg-indigo-900 text-gray-100 font-semibold rounded-full hover:bg-gray-300 hover:text-indigo-800 mt-5">
+                        <a href="#">Get Started</a>
+                    </botton>
+                </div>
+
+                <div class="sm:mt-2 sm:ml-4 text-gray-500 hidden">
                     <p>Have any questions?<Span class="pl-1 font-semibold underline"><a href="#">Contact Us</a></Span></p>
                 </div>
             </div>
-            <div class="w-3/12 mr-20">
+            <div class="sm:inline-flex hidden sm:w-3/12 w-0 sm:mr-20">
                 <img src="img/ph2.png" alt="">
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-pink-900 to-indigo-800 px-44 py-24 flex text-gray-100 mt-20 justify-between items-center">
-            <div class="w-3/5">
+        <div class="font-light bg-gradient-to-br from-pink-900 to-indigo-800 sm:px-44 px-5 sm:py-24 py-16 sm:flex block text-gray-100 mt-20 sm:justify-between sm:items-center">
+            <div class="sm:w-3/5 w-full">
                 <h2 class="font-serif text-5xl font-bold text-gray-100 mb-5">How to get started.</h2>
                 <ul class="mb-12"> 
                     <li class="mb-2"><span class="font-bold">Download the App:</span> Find the PayPat app on your device's app store (available on iOS and Android) and download it for free. You can also access PayPat through our website on any desktop browser.</li>
@@ -68,62 +76,40 @@
                 </ul>
                 <a class="py-2 px-5 font-semibold border-2 border-white rounded-full hover:bg-white hover:text-indigo-800" href="#">Download App</a>
             </div>
-            <div class="">
-                <div class="inline-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 text-white mr-12" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
-                    </svg>
-                      
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 text-white mr-12" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
-                    </svg>
-                      
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-12 text-white mr-24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
-                    </svg>    
+            <div class="mt-10">
+                <div class="flex sm:items-center sm:mr-20">
+                        <img class="w-20 h-20 mr-5" src="img/icon (1).png" alt="">
+                        <img class="w-20 h-20" src="img/icon (2).png" alt="">
                 </div>
-                <!-- <div class="inline-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white mr-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
-                    </svg>
-                      
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white mr-10" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-                    </svg>
-                      
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
-                    </svg>     
-                </div> -->
             </div>
         </div>
 
-        <div class="flex px-44 justify-between mt-36 items-center">
-            <div class="py-14 px-16 bg-indigo-900 rounded-xl w-2/5 hover:scale-110 hover:duration-1000 hover:ease-in-out">
+        <div class="sm:flex sm:px-44 px-5 sm:justify-between sm:mt-36 items-center sm:mt-14 mt-16">
+            <div class="py-14 px-16 bg-indigo-900 rounded-xl sm:w-2/5 sm-full hover:scale-110 hover:duration-1000 hover:ease-in-out">
                 <h3 class="text-gray-200 font-sans font-bold text-3xl">Pay<span class="text-gray-300 font-normal">Pat</span></h3>
                 <p class="mt-4 text-gray-200">Making your transaction experience seamless, easier & faster.</p>
                 <h4 class="mt-4 font-bold text-gray-300 text-3xl">Let's Go!</h4>
             </div>
-            <div class="w-2/5 mr-24">
+            <div class="sm:w-2/5 w-full sm:mr-24 sm:mt-auto mt-16">
                 <h3 class="font-serif text-5xl font-bold text-indigo-900">Easy to operate</h3>
-                <p class="mt-3">With PayPat, you have a comprehensive set of features at your fingertips, enabling you to perform a wide range of banking transactions with ease.</p>
+                <p class="sm:mt-3 mt-6 sm:text-left text-center font-semibold">With PayPat, you have a comprehensive set of features at your fingertips, enabling you to perform a wide range of banking transactions with ease.</p>
             </div>
         </div>
 
-        <div class="flex px-44 py-16 mt-10">
-            <div class="">
-                <h2 class="font-serif text-indigo-900 font-bold text-4xl mt-28">
+        <div class="sm:flex block sm:px-44 px-5 py-16 sm:mt-10">
+            <div class="sm:text-left text-center">
+                <h2 class="font-serif text-indigo-900 font-bold text-4xl sm:mt-28 mt-8">
                     Simple UI & UX
                 </h2>
-                <p class="font-semibold w-4/5 mt-7">Our application and website are designed with simplicity in mind. The user-friendly interface allows you to navigate effortlessly through various banking tasks, from checking your account balance to transferring funds.</p>
+                <p class="font-semibold sm:w-4/5 w-full mt-7">Our application and website are designed with simplicity in mind. The user-friendly interface allows you to navigate effortlessly through various banking tasks, from checking your account balance to transferring funds.</p>
             </div>
             <div>
-                <img class="w-full animate-bounce" src="img/ph1.png" alt="">
+                <img class="w-full sm:animate-bounce sm:mt-auto mt-12" src="img/ph1.png" alt="">
             </div>
         </div>
 
-        <div class="px-44 my-20">
-            <div class="flex text-center justify-between">
+        <div class="sm:px-44 px-5 sm:my-20">
+            <div class="sm:flex block text-center sm:justify-between">
                 <div class="col">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg text-white w-24 bg-pink-900 p-6 rounded-full" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
@@ -132,7 +118,7 @@
                     <h3 class="font-bold mt-6 text-pink-900">Personal Financies</h3>
                     <p class="mt-3">Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Vitae suscipit tellus mauris a diam maecenas. Tristique et egestas quis ipsum.</p>
                 </div>
-                <div class="col">
+                <div class="col sm:mt-auto mt-10">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg text-white w-24 bg-pink-900 p-6 rounded-full" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
                       </svg>
@@ -140,7 +126,7 @@
                     <h3  class="font-bold mt-6 text-pink-900">Banking & Coverage</h3>
                     <p class="mt-3">Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Vitae suscipit tellus mauris a diam maecenas. Tristique et egestas quis ipsum..</p>
                 </div>
-                <div class="col">
+                <div class="col sm:mt-auto mt-10">
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg text-white w-24 bg-pink-900 p-6 rounded-full" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
                       </svg>
@@ -151,26 +137,33 @@
             </div>
         </div>
 
-        <div class="px-44 flex items-center justify-between">
+        <div class="sm:px-44 px-5 sm:flex block items-center sm:justify-between sm:mt-auto mt-14">
             <div>
                 <h2 class="font-serif text-indigo-900 font-bold text-5xl">
                     Ready to start?
                 </h2>
             </div>
-            <div class="relative inline-flex items-center mt-8">
+
+            <div>
+                <botton class="inline-flex sm:hidden py-3 px-6 bg-indigo-900 text-gray-100 font-semibold rounded-full hover:bg-gray-300 hover:text-indigo-900 mt-8">
+                    <a href="#">Get Started</a>
+                </botton>
+            </div>
+            
+            <div class="sm:relative sm:inline-flex sm:items-center sm:mt-8 hidden">
                 <div><h3 class="relative py-3 pl-5 pr-32 text-sm rounded-full bg-white text-gray-400 font-semibold shadow-md">Enter email address</h3></div>
                 <div class="hover:scale-110 hover:duration-1000 hover:ease-in-out"><a class="relative py-3 px-5 -ml-8 text-sm bg-indigo-900 text-white font-semibold rounded-full shadow-md" href="#">Get Started</a></div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="flex justify-between items-center px-44 bg-indigo-900 py-20 mt-20">
-            <div class="flex items-center">
-                <span>
-                    <h3 class="text-gray-100 font-sans font-bold text-3xl">Pay<span class="text-gray-200 font-normal">Pat</span></h3>
-                </span>
+        <div class="sm:flex block sm:justify-between sm:items-center sm:px-44 bg-indigo-900 sm:py-20 py-14 sm:mt-20 mt-10">
+            <div class="sm:flex sm:items-center block text-center">
+                <div>
+                    <h3 class="text-gray-100 font-sans font-bold text-3xl sm:mb-auto mb-8">Pay<span class="text-gray-200 font-normal">Pat</span></h3>
+                </div>
                 
-                <span class="inline-flex ml-20 text-gray-200 font-semibold">
+                <div class="inline-flex sm:ml-20 text-gray-200 font-semibold">
                     <h4>
                         <a href="#">Home</a>
                     </h4>
@@ -180,9 +173,9 @@
                     <h4>
                         <a class="ml-6" href="#">Contact</a>
                     </h4>
-                </span>
+                </div>
             </div>
-            <div class="inline-flex">
+            <div class="sm:inline-flex hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 text-white mr-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
                   </svg>

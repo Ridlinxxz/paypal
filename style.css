@@ -10,3 +10,10 @@ body {
     background-blend-mode: soft-light;
     width: 100%;
 }
+
+
+@media screen and (max-width: 450px) {
+.col {
+    width: 100%;
+}
+}
